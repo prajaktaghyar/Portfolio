@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Prajakta Ghyar — AI Engineer · Nagpur</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@300;400;500&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+
+<div id="progress"></div>
+<canvas id="bgc"></canvas>
+<div id="cur-d"></div>
+<div id="cur-r"></div>
+
+<!-- NAV -->
+<nav id="navbar">
+  <a href="#home" class="nav-logo">Prajakta Ghyar</a>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#timeline">Journey</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#connect">Contact</a></li>
+  </ul>
+  <div class="nav-right">
+    <div class="nav-loc">Nagpur, Maharashtra</div>
+    <div class="status-pill"><div class="sdot"></div>Available</div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-inner">
+    <div class="hero-eyebrow">
+      <span></span>
+      B.Tech AI Engineering · 2027
+    </div>
+
+    <div class="hero-name">
+      <div class="glitch-wrap">
+        <div class="glitch-text" data-text="Prajakta">Prajakta</div>
+      </div>
+      <div class="glitch-wrap">
+        <div class="glitch-text italic" data-text="Ghyar">Ghyar</div>
+      </div>
+    </div>
+
+    <div class="hero-role">Machine Learning <span class="sep">·</span> Deep Learning <span class="sep">·</span> LLMs <span class="sep">·</span> NLP</div>
+
+    <div class="typewriter-wrap" id="tw-wrap"><span id="tw-text"></span><span id="tw-cursor"></span></div>
+
+    <div class="hero-actions">
+      <a href="#projects" class="btn-mag btn-primary-mag" id="view-proj-btn"><span>View Projects ↓</span></a>
+      <a href="mailto:prajaktaghyar033@gmail.com" class="btn-mag btn-ghost-mag"><span>Get in Touch →</span></a>
+    </div>
+  </div>
+
+  <!-- floating tech tags -->
+  <div class="hero-float">
+    <div class="ftag"><span class="dot" style="background:#4fd1c5"></span>TensorFlow / Keras</div>
+    <div class="ftag"><span class="dot" style="background:#c9a96e"></span>RAG Pipelines</div>
+    <div class="ftag"><span class="dot" style="background:#e87070"></span>Transformers HF</div>
+    <div class="ftag"><span class="dot" style="background:#a78bfa"></span>Scikit-learn</div>
+    <div class="ftag"><span class="dot" style="background:#4fd1c5"></span>Prompt Engineering</div>
+    <div class="ftag"><span class="dot" style="background:#c9a96e"></span>OpenCV / MediaPipe</div>
+    <div class="ftag"><span class="dot" style="background:#e87070"></span>MySQL / Pandas</div>
+  </div>
+
+  <div class="hero-scroll">Scroll to explore</div>
+</section>
+
+<!-- LOCATION BANNER -->
+<div class="loc-banner">
+  <div class="loc-item"><span class="icon">◎</span> Nagpur, Maharashtra, India</div>
+  <div class="loc-divider"></div>
+  <div class="loc-item"><span class="icon">🎓</span> SVPCET, Nagpur · 2023–2027</div>
+  <div class="loc-divider"></div>
+  <div class="loc-item"><span class="icon">⚡</span> 21° 8'N, 79° 5'E</div>
+  <div class="loc-divider"></div>
+  <div class="loc-ticker">
+    <div class="loc-ticker-inner">
+      <span>Nagpur · The Orange City of India</span>
+      <span>✦</span>
+      <span>Home to SVPCET · AI Engineering Pioneer</span>
+      <span>✦</span>
+      <span>Central India's Rising Tech Talent</span>
+      <span>✦</span>
+      <span>Building AI that solves real problems</span>
+      <span>✦</span>
+      <span>Nagpur · The Orange City of India</span>
+      <span>✦</span>
+      <span>Home to SVPCET · AI Engineering Pioneer</span>
+      <span>✦</span>
+      <span>Central India's Rising Tech Talent</span>
+      <span>✦</span>
+      <span>Building AI that solves real problems</span>
+      <span>✦</span>
+    </div>
+  </div>
+</div>
+
+<!-- STATS BAR -->
+<div class="stats-bar">
+  <div class="stat-item rv">
+    <div class="stat-val" data-target="99.54" data-suffix="%">0%</div>
+    <div class="stat-label">Best Model Accuracy</div>
+  </div>
+  <div class="stat-item rv d1">
+    <div class="stat-val" data-target="70" data-suffix="%">0%</div>
+    <div class="stat-label">Faster Retrieval</div>
+  </div>
+  <div class="stat-item rv d2">
+    <div class="stat-val" data-target="6" data-suffix="">0</div>
+    <div class="stat-label">AI Projects Delivered</div>
+  </div>
+  <div class="stat-item rv d3">
+    <div class="stat-val" data-target="100" data-suffix="+">0+</div>
+    <div class="stat-label">DSA Problems Solved</div>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="about-grid">
+    <div class="rv">
+      <div class="about-card">
+        <div class="about-card-top">
+          <div class="about-glow"></div>
+          <div class="about-initials">PG</div>
+        </div>
+        <div class="about-card-footer">
+          <div class="chip-row">
+            <span class="chip">Python</span><span class="chip">TensorFlow</span><span class="chip">Transformers</span>
+            <span class="chip">RAG</span><span class="chip">OpenCV</span><span class="chip">Scikit-learn</span>
+            <span class="chip">MySQL</span><span class="chip">MediaPipe</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="about-text rv d1">
+      <div class="s-eyebrow">About Me</div>
+      <h2 class="s-title">AI Engineering<br>Student &amp; Builder</h2>
+      <p>I'm a <strong>B.Tech AI Engineering student</strong> at St. Vincent Pallotti College of Engineering and Technology, Nagpur (2023–2027). Passionate about building AI systems that solve meaningful problems across agriculture, healthcare, and conversational AI.</p>
+      <p>My projects span <strong>99.54%-accurate ML pipelines</strong>, LLM-powered document QA systems, KV-cached transformer optimization, and speech emotion recognition — all designed with a focus on real-world deployment and measurable outcomes.</p>
+      <p>Selected for <strong>Smart India Hackathon</strong> · Active competitive programmer · Philosophy: <strong>Code · Create · Innovate · Repeat.</strong></p>
+      <div class="about-metrics">
+        <div class="amet rv d1"><div class="amet-val" data-target="99.54" data-suffix="%">0%</div><div class="amet-key">Peak Accuracy</div></div>
+        <div class="amet rv d2"><div class="amet-val" data-target="70" data-suffix="%">0%</div><div class="amet-key">Faster Retrieval</div></div>
+        <div class="amet rv d3"><div class="amet-val" data-target="100" data-suffix="+">0+</div><div class="amet-key">DSA Solved</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="dv"></div>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="s-eyebrow rv">Skills</div>
+  <h2 class="s-title rv">Technical Stack</h2>
+  <p class="s-sub rv">Proficiencies built through hands-on projects, internships, and competitive programming.</p>
+  <div class="skills-layout">
+    <div class="skill-nav rv">
+      <button class="snav-btn active" data-tab="ml">Machine Learning</button>
+      <button class="snav-btn" data-tab="dl">Deep Learning &amp; LLMs</button>
+      <button class="snav-btn" data-tab="lang">Languages</button>
+      <button class="snav-btn" data-tab="tools">Tools &amp; Data</button>
+    </div>
+    <div>
+      <div class="tab-panel active" id="tab-ml">
+        <div class="skills-grid">
+          <div class="sk rv"><div class="sk-top"><span class="sk-name">Scikit-learn</span><span class="sk-pct">95%</span></div><div class="sk-bar"><div class="sk-fill" data-w="95"></div></div></div>
+          <div class="sk rv d1"><div class="sk-top"><span class="sk-name">Random Forest</span><span class="sk-pct">92%</span></div><div class="sk-bar"><div class="sk-fill" data-w="92"></div></div></div>
+          <div class="sk rv d2"><div class="sk-top"><span class="sk-name">XGBoost</span><span class="sk-pct">88%</span></div><div class="sk-bar"><div class="sk-fill" data-w="88"></div></div></div>
+          <div class="sk rv"><div class="sk-top"><span class="sk-name">SVM</span><span class="sk-pct">85%</span></div><div class="sk-bar"><div class="sk-fill" data-w="85"></div></div></div>
+          <div class="sk rv d1"><div class="sk-top"><span class="sk-name">Feature Engineering</span><span class="sk-pct">90%</span></div><div class="sk-bar"><div class="sk-fill" data-w="90"></div></div></div>
+          <div class="sk rv d2"><div class="sk-top"><span class="sk-name">Model Evaluation</span><span class="sk-pct">88%</span></div><div class="sk-bar"><div class="sk-fill" data-w="88"></div></div></div>
+        </div>
+      </div>
+      <div class="tab-panel" id="tab-dl">
+        <div class="skills-grid">
+          <div class="sk rv"><div class="sk-top"><span class="sk-name">TensorFlow / Keras</span><span class="sk-pct">88%</span></div><div class="sk-bar"><div class="sk-fill" data-w="88"></div></div></div>
+          <div class="sk rv d1"><div class="sk-top"><span class="sk-name">Transformers (HF)</span><span class="sk-pct">82%</span></div><div class="sk-bar"><div class="sk-fill" data-w="82"></div></div></div>
+          <div class="sk rv d2"><div class="sk-top"><span class="sk-name">RAG Pipelines</span><span class="sk-pct">85%</span></div><div class="sk-bar"><div class="sk-fill" data-w="85"></div></div></div>
+          <div class="sk rv"><div class="sk-top"><span class="sk-name">Prompt Engineering</span><span class="sk-pct">87%</span></div><div class="sk-bar"><div class="sk-fill" data-w="87"></div></div></div>
+          <div class="sk rv d1"><div class="sk-top"><span class="sk-name">KV Attention Caching</span><span class="sk-pct">78%</span></div><div class="sk-bar"><div class="sk-fill" data-w="78"></div></div></div>
+          <div class="sk rv d2"><div class="sk-top"><span class="sk-name">MFCC / Audio ML</span><span class="sk-pct">80%</span></div><div class="sk-bar"><div class="sk-fill" data-w="80"></div></div></div>
+        </div>
+      </div>
+      <div class="tab-panel" id="tab-lang">
+        <div class="skills-grid">
+          <div class="sk rv"><div class="sk-top"><span class="sk-name">Python</span><span class="sk-pct">95%</span></div><div class="sk-bar"><div class="sk-fill" data-w="95"></div></div></div>
+          <div class="sk rv d1"><div class="sk-top"><span class="sk-name">Java</span><span class="sk-pct">80%</span></div><div class="sk-bar"><div class="sk-fill" data-w="80"></div></div></div>
+          <div class="sk rv d2"><div class="sk-top"><span class="sk-name">C</span><span class="sk-pct">75%</span></div><div class="sk-bar"><div class="sk-fill" data-w="75"></div></div></div>
+          <div class="sk rv"><div class="sk-top"><span class="sk-name">JavaScript</span><span class="sk-pct">70%</span></div><div class="sk-bar"><div class="sk-fill" data-w="70"></div></div></div>
+          <div class="sk rv d1"><div class="sk-top"><span class="sk-name">SQL</span><span class="sk-pct">82%</span></div><div class="sk-bar"><div class="sk-fill" data-w="82"></div></div></div>
+          <div class="sk rv d2"><div class="sk-top"><span class="sk-name">HTML / CSS</span><span class="sk-pct">72%</span></div><div class="sk-bar"><div class="sk-fill" data-w="72"></div></div></div>
+        </div>
+      </div>
+      <div class="tab-panel" id="tab-tools">
+        <div class="skills-grid">
+          <div class="sk rv"><div class="sk-top"><span class="sk-name">Pandas / NumPy</span><span class="sk-pct">93%</span></div><div class="sk-bar"><div class="sk-fill" data-w="93"></div></div></div>
+          <div class="sk rv d1"><div class="sk-top"><span class="sk-name">OpenCV</span><span class="sk-pct">80%</span></div><div class="sk-bar"><div class="sk-fill" data-w="80"></div></div></div>
+          <div class="sk rv d2"><div class="sk-top"><span class="sk-name">MediaPipe</span><span class="sk-pct">78%</span></div><div class="sk-bar"><div class="sk-fill" data-w="78"></div></div></div>
+          <div class="sk rv"><div class="sk-top"><span class="sk-name">MySQL</span><span class="sk-pct">85%</span></div><div class="sk-bar"><div class="sk-fill" data-w="85"></div></div></div>
+          <div class="sk rv d1"><div class="sk-top"><span class="sk-name">Git / GitHub</span><span class="sk-pct">88%</span></div><div class="sk-bar"><div class="sk-fill" data-w="88"></div></div></div>
+          <div class="sk rv d2"><div class="sk-top"><span class="sk-name">Jupyter / Colab</span><span class="sk-pct">92%</span></div><div class="sk-bar"><div class="sk-fill" data-w="92"></div></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="s-eyebrow rv">Projects</div>
+  <h2 class="s-title rv">Featured Work</h2>
+  <p class="s-sub rv">End-to-end AI systems engineered for measurable real-world impact.</p>
+  <div class="proj-grid">
+    <div class="proj-card rv">
+      <div class="proj-top-line"></div>
+      <div class="proj-number">01 — PROJECT</div>
+      <div class="proj-arrow">↗</div>
+      <div class="proj-title">Ankur — AI Crop Recommendation</div>
+      <div class="proj-desc">High-accuracy ML pipeline using soil NPK and environmental data. Comprehensive feature engineering with Random Forest, SVM, XGBoost for precision agriculture decisions.</div>
+      <div class="proj-tags"><span class="ptag ptag-a">Random Forest</span><span class="ptag ptag-a">XGBoost</span><span class="ptag ptag-t">SVM</span><span class="ptag ptag-t">AgriTech</span></div>
+      <div class="proj-badge">✦ 99.54% Accuracy</div>
+    </div>
+    <div class="proj-card rv d1">
+      <div class="proj-top-line"></div>
+      <div class="proj-number">02 — PROJECT</div>
+      <div class="proj-arrow">↗</div>
+      <div class="proj-title">RAG-Based Document Analyzer</div>
+      <div class="proj-desc">LLM-powered document QA system with vector embeddings and semantic search. Scalable pipeline for context-aware, large-document processing with 70% faster retrieval.</div>
+      <div class="proj-tags"><span class="ptag ptag-a">RAG</span><span class="ptag ptag-a">Vector Embeddings</span><span class="ptag ptag-t">Semantic Search</span><span class="ptag ptag-t">LLM</span></div>
+      <div class="proj-badge">✦ 70% Faster Retrieval</div>
+    </div>
+    <div class="proj-card rv d2">
+      <div class="proj-top-line"></div>
+      <div class="proj-number">03 — PROJECT</div>
+      <div class="proj-arrow">↗</div>
+      <div class="proj-title">Attention Caching — LLM Optimization</div>
+      <div class="proj-desc">KV attention caching to dramatically accelerate transformer inference. Optimized multi-turn conversational AI throughput with significant latency reduction.</div>
+      <div class="proj-tags"><span class="ptag ptag-a">KV Caching</span><span class="ptag ptag-a">Transformers</span><span class="ptag ptag-t">Optimization</span></div>
+      <div class="proj-badge">✦ 50% Faster Inference</div>
+    </div>
+    <div class="proj-card rv">
+      <div class="proj-top-line"></div>
+      <div class="proj-number">04 — PROJECT</div>
+      <div class="proj-arrow">↗</div>
+      <div class="proj-title">Speech Emotion Recognition</div>
+      <div class="proj-desc">Deep learning model using MFCC features for multi-class emotion classification. Full audio preprocessing pipeline with noise reduction and normalization.</div>
+      <div class="proj-tags"><span class="ptag ptag-a">MFCC</span><span class="ptag ptag-a">Deep Learning</span><span class="ptag ptag-t">Audio Processing</span></div>
+      <div class="proj-badge">✦ 92%+ Accuracy</div>
+    </div>
+    <div class="proj-card rv d1">
+      <div class="proj-top-line"></div>
+      <div class="proj-number">05 — PROJECT</div>
+      <div class="proj-arrow">↗</div>
+      <div class="proj-title">AI Customer Segmentation Dashboard</div>
+      <div class="proj-desc">Intelligent Streamlit web app analyzing datasets in real time — K-Means clustering to detect customer segments and surface actionable business insights.</div>
+      <div class="proj-tags"><span class="ptag ptag-a">K-Means</span><span class="ptag ptag-t">Streamlit</span><span class="ptag ptag-t">Python</span></div>
+      <div class="proj-badge">✦ Open Source</div>
+    </div>
+    <div class="proj-card rv d2">
+      <div class="proj-top-line"></div>
+      <div class="proj-number">06 — PROJECT</div>
+      <div class="proj-arrow">↗</div>
+      <div class="proj-title">Blood Bank Management System</div>
+      <div class="proj-desc">Python (Tkinter) + MySQL application for donor and blood inventory management — real-time tracking, advanced search and filtering for operational efficiency.</div>
+      <div class="proj-tags"><span class="ptag ptag-a">Python</span><span class="ptag ptag-t">Tkinter</span><span class="ptag ptag-t">MySQL</span><span class="ptag ptag-t">Healthcare</span></div>
+      <div class="proj-badge">✦ Real-time Tracking</div>
+    </div>
+  </div>
+</section>
+
+<!-- FUN FACT STRIP -->
+<div class="fun-strip">
+  <div class="fun-inner">
+    <span>Built in <b>Nagpur</b>, Central India ✦</span>
+    <span><b>99.54%</b> model accuracy on crop recommendation ✦</span>
+    <span><b>100+</b> DSA problems solved on LeetCode &amp; HackerRank ✦</span>
+    <span>Selected for <b>Smart India Hackathon</b> ✦</span>
+    <span>Exploring <b>LLMs · RAG · Transformers</b> daily ✦</span>
+    <span>SVPCET Nagpur · AI Engineering <b>Class of 2027</b> ✦</span>
+    <span>From the <b>Orange City</b> to the global AI stage ✦</span>
+    <span>Built in <b>Nagpur</b>, Central India ✦</span>
+    <span><b>99.54%</b> model accuracy on crop recommendation ✦</span>
+    <span><b>100+</b> DSA problems solved on LeetCode &amp; HackerRank ✦</span>
+    <span>Selected for <b>Smart India Hackathon</b> ✦</span>
+    <span>Exploring <b>LLMs · RAG · Transformers</b> daily ✦</span>
+    <span>SVPCET Nagpur · AI Engineering <b>Class of 2027</b> ✦</span>
+    <span>From the <b>Orange City</b> to the global AI stage ✦</span>
+  </div>
+</div>
+
+<!-- JOURNEY TIMELINE -->
+<section id="timeline">
+  <div class="s-eyebrow rv">Journey</div>
+  <h2 class="s-title rv">My Story So Far</h2>
+  <p class="s-sub rv">Every milestone from Nagpur to the national AI stage.</p>
+  <div class="timeline-wrap">
+    <div class="tl-item rv">
+      <div class="tl-dot"></div>
+      <div class="tl-year">2023</div>
+      <div class="tl-title">Began B.Tech in AI Engineering</div>
+      <div class="tl-sub">SVPCET, Nagpur, Maharashtra</div>
+      <div class="tl-body">Enrolled in one of India's specialized AI Engineering programs. Dived deep into Python, Data Structures, AI fundamentals, and first ML experiments with Scikit-learn.</div>
+    </div>
+    <div class="tl-item rv d1">
+      <div class="tl-dot"></div>
+      <div class="tl-year">2024 · Jan</div>
+      <div class="tl-title">First ML Projects — Ankur Crop AI</div>
+      <div class="tl-sub">Machine Learning Research</div>
+      <div class="tl-body">Built Ankur, a crop recommendation system achieving 99.54% accuracy using Random Forest, XGBoost, and SVM with extensive feature engineering on soil NPK data.</div>
+    </div>
+    <div class="tl-item rv d2">
+      <div class="tl-dot"></div>
+      <div class="tl-year">2024 · Mid</div>
+      <div class="tl-title">Machine Learning Intern — CodeAlpha</div>
+      <div class="tl-sub">Industry Experience</div>
+      <div class="tl-body">Completed ML internship delivering credit score prediction and diabetes classification models. Gained real-world exposure to end-to-end model pipelines and evaluation.</div>
+    </div>
+    <div class="tl-item rv d3">
+      <div class="tl-dot"></div>
+      <div class="tl-year">2024 · Late</div>
+      <div class="tl-title">Smart India Hackathon — National Selection</div>
+      <div class="tl-sub">National Recognition · New Delhi</div>
+      <div class="tl-body">Selected at national level with an AI-based solution. Competed among thousands of teams from across India — a landmark achievement in competitive innovation.</div>
+    </div>
+    <div class="tl-item rv">
+      <div class="tl-dot"></div>
+      <div class="tl-year">2025</div>
+      <div class="tl-title">LLMs, RAG &amp; Transformer Optimization</div>
+      <div class="tl-sub">Advanced AI Research</div>
+      <div class="tl-body">Expanded into the LLM ecosystem — built a RAG-based document analyzer with 70% faster retrieval, implemented KV attention caching for 50% inference speedup, and explored speech emotion recognition with MFCC deep learning.</div>
+    </div>
+    <div class="tl-item rv d1">
+      <div class="tl-dot" style="border-color:var(--teal)"></div>
+      <div class="tl-year" style="color:var(--teal)">2027 · Target</div>
+      <div class="tl-title">B.Tech Graduation &amp; Full-time AI Role</div>
+      <div class="tl-sub" style="color:var(--gold)">The Next Chapter</div>
+      <div class="tl-body">Graduating with a specialized AI Engineering degree. Targeting impactful roles in ML engineering, research, or AI product development — from Nagpur to wherever the best problems are.</div>
+    </div>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education">
+  <div class="s-eyebrow rv">Education &amp; Credentials</div>
+  <h2 class="s-title rv">Academic Background</h2>
+  <p class="s-sub rv">Formal AI engineering education paired with industry certifications.</p>
+  <div class="edu-grid">
+    <div class="edu-main rv">
+      <div class="edu-badge">2023 — 2027</div>
+      <div class="edu-degree">B.Tech in Artificial Intelligence Engineering</div>
+      <div class="edu-school">St. Vincent Pallotti College of Engineering &amp; Technology</div>
+      <div class="edu-loc">Nagpur, Maharashtra, India</div>
+      <p class="edu-body">Coursework in Machine Learning, Deep Learning, AI Algorithms, Data Structures, Database Systems, Computer Vision, and Natural Language Processing. Active participant in hackathons and inter-college tech events across Nagpur.</p>
+    </div>
+    <div class="certs rv d1">
+      <div class="cert"><div class="cert-ico">🏅</div><div><div class="cert-name">HackerRank — Problem Solving &amp; SQL</div><div class="cert-sub">Industry-recognized certification in algorithmic problem solving and SQL</div></div></div>
+      <div class="cert"><div class="cert-ico">🤖</div><div><div class="cert-name">Generative AI — Coursera</div><div class="cert-sub">LLMs, Prompt Engineering, and AI application development in practice</div></div></div>
+      <div class="cert"><div class="cert-ico">💼</div><div><div class="cert-name">Machine Learning Intern — CodeAlpha</div><div class="cert-sub">Credit score prediction, diabetes classification — end-to-end ML pipelines</div></div></div>
+      <div class="cert"><div class="cert-ico">🏆</div><div><div class="cert-name">Smart India Hackathon — Selected</div><div class="cert-sub">National-level AI innovation selection — competing among top engineering talent</div></div></div>
+    </div>
+  </div>
+</section>
+
+<div class="dv"></div>
+
+<!-- ACHIEVEMENTS -->
+<section id="achievements">
+  <div class="s-eyebrow rv">Recognition</div>
+  <h2 class="s-title rv">Milestones</h2>
+  <p class="s-sub rv">Key achievements from Nagpur to the national stage.</p>
+  <div class="ach-grid">
+    <div class="ach rv">
+      <div class="ach-val">SIH</div>
+      <div class="ach-title">Smart India Hackathon</div>
+      <div class="ach-desc">National-level selection with an AI-based solution — representing SVPCET Nagpur on a national competitive stage.</div>
+    </div>
+    <div class="ach rv d1">
+      <div class="ach-val" data-count="100">0</div>
+      <div class="ach-title">DSA Problems Solved</div>
+      <div class="ach-desc">100+ problems across LeetCode and HackerRank spanning arrays, trees, graphs, and dynamic programming.</div>
+    </div>
+    <div class="ach rv d2">
+      <div class="ach-val">6+</div>
+      <div class="ach-title">AI Projects Delivered</div>
+      <div class="ach-desc">Six end-to-end projects across ML, LLMs, computer vision, audio, and healthcare applications.</div>
+    </div>
+  </div>
+</section>
+
+<!-- CONNECT -->
+<section id="connect">
+  <div class="connect-center">
+    <div class="s-eyebrow rv">Contact</div>
+    <h2 class="s-title rv">Let's Build Something<br>Intelligent Together</h2>
+    <p class="s-sub rv" style="max-width:100%;margin-left:auto;margin-right:auto">Open to AI/ML internships, research collaborations, and project partnerships. Based in Nagpur — open to remote and relocation.</p>
+    <a href="mailto:prajaktaghyar033@gmail.com" class="connect-email rv">prajaktaghyar033@gmail.com</a>
+    <div class="connect-grid rv">
+      <a href="https://github.com/prajaktaghyar" target="_blank" rel="noopener" class="cl"><div class="cl-ico">⚙</div><div><div class="cl-label">GitHub</div><div class="cl-val">github.com/prajaktaghyar</div></div></a>
+      <a href="https://www.linkedin.com/in/prajakta-ghyar-276051317/" target="_blank" rel="noopener" class="cl"><div class="cl-ico">💼</div><div><div class="cl-label">LinkedIn</div><div class="cl-val">prajakta-ghyar-276051317</div></div></a>
+      <a href="https://leetcode.com/u/prajaktaghyar/" target="_blank" rel="noopener" class="cl"><div class="cl-ico">⚡</div><div><div class="cl-label">LeetCode</div><div class="cl-val">leetcode.com/u/prajaktaghyar</div></div></a>
+      <a href="tel:+918766058851" class="cl"><div class="cl-ico">📞</div><div><div class="cl-label">Phone</div><div class="cl-val">+91 8766058851</div></div></a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="f-copy">© 2025 Prajakta Ghyar · All rights reserved</div>
+  <div class="f-right">
+    <div class="f-loc">Nagpur, Maharashtra, India</div>
+    <div class="f-made">Made with <span>♥</span> · AI Engineer</div>
+  </div>
+</footer>
+
+<!-- AI CONSOLE EASTER EGG -->
+<div id="console-trig" title="Chat with Prajakta's AI">AI</div>
+<div id="ai-console">
+  <div class="console-head">
+    <div class="console-title">prajakta.ai terminal</div>
+    <button class="console-close" id="console-close-btn">✕</button>
+  </div>
+  <div class="console-body" id="console-body">
+    <div class="console-msg ai"><span>prajakta.ai $</span> Hello! Ask me anything about Prajakta's skills, projects, or background. 👋</div>
+  </div>
+  <div class="console-input-row">
+    <span style="font-family:var(--mono);font-size:.65rem;color:var(--text3)">›</span>
+    <input id="console-input" type="text" placeholder="Type a question..." autocomplete="off"/>
+    <button class="console-send" id="console-send-btn">↵</button>
+  </div>
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>
